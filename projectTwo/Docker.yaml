@@ -34,7 +34,7 @@ stages:
       displayName: Verify Repository
 
     - script: |
-        cd $(Build.SourcesDirectory)/ProjectTwo
+        cd $(Build.SourcesDirectory)/projectTwo
 
         docker build -t website:v1 .
       displayName: Build Docker Image
@@ -53,7 +53,7 @@ stages:
 
     - task: CopyFiles@2
       inputs:
-        SourceFolder: '$(Build.SourcesDirectory)/ProjectTwo'
+        SourceFolder: '$(Build.SourcesDirectory)/projectTwo'
         Contents: 'website.tar'
         TargetFolder: '$(Build.ArtifactStagingDirectory)'
       displayName: Copy TAR
