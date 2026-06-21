@@ -7,7 +7,7 @@ pool:
 stages:
 
 ############################
-BUILD STAGE
+#BUILD STAGE
 ############################
 
 - stage: Build
@@ -65,7 +65,7 @@ BUILD STAGE
       displayName: Publish Artifact
 
 ############################
-DEPLOY STAGE
+#DEPLOY STAGE
 ############################
 
 - stage: Deploy
