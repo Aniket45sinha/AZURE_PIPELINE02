@@ -1,8 +1,8 @@
 trigger:
 - main
 
-pool:
-  name: 
+pool: 
+  name: Test
 
 stages:
 
