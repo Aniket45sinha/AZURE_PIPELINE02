@@ -44,7 +44,7 @@ stages:
       displayName: Verify Image
 
     - script: |
-        cd $(Build.SourcesDirectory)/ProjectTwo
+        cd $(Build.SourcesDirectory)/projectTwo
 
         docker save website:v1 -o website.tar
 
